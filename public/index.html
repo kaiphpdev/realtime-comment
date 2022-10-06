@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Comment
+    </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+     
+    <div class="container ">
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <h4>
+                    <b>
+                        Create a npm project and install dependancies. express, moment, nodemon
+                    </b>
+                </h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+                </p>
+            </div> 
+        </div> 
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Comment</h4>
+            </div>
+            <div class="col-sm-12">
+                <div class="form-froup">
+                    <label for="">have a Comment</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" class="form-control"></textarea>
+
+                </div>
+            </div>
+            <div class="col-sm-12 mt-3">
+                <button type="button" id="submitBtn" class="btn btn-primary float-end">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-success typing"></div>
+            <div class="col-sm-12">
+                <ul class="comment__box" id="commentBox">
+                    
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
